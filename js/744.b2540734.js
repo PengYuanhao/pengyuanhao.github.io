@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunkpowervue2"]=self["webpackChunkpowervue2"]||[]).push([[744],{2744:function(e,n,f){f.r(n),f.d(n,{default:function(){return i}});var t=function(){var e=this,n=e._self._c;return n("div",{staticStyle:{"font-size":"40px",color:"#ffffff"}},[e._v("流程管理")])},u=[],r={name:"index"},c=r,l=f(1001),s=(0,l.Z)(c,t,u,!1,null,"4cae9ee6",null),i=s.exports}}]);
+//# sourceMappingURL=744.b2540734.js.map

@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunkpowervue2"]=self["webpackChunkpowervue2"]||[]).push([[716],{3716:function(e,n,f){f.r(n),f.d(n,{default:function(){return i}});var t=function(){var e=this,n=e._self._c;return n("div",{staticStyle:{"font-size":"40px",color:"#ffffff"}},[e._v("设施设备运行状态")])},u=[],r={name:"index"},l=r,s=f(1001),c=(0,s.Z)(l,t,u,!1,null,"438213d0",null),i=c.exports}}]);
+//# sourceMappingURL=716.21ce28fe.js.map
