@@ -1,0 +1,192 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          113.776131298719307,
+          34.746539851671031
+        ]
+      },
+      "properties": {
+        "gid": 5,
+        "id": 5,
+        "name": "稼轩主所",
+        "radius": 3300,
+        "color": "#72F7F9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          113.613004712536593,
+          34.720725041866878
+        ]
+      },
+      "properties": {
+        "gid": 6,
+        "id": 6,
+        "name": "居易主所",
+        "radius": 4000,
+        "color": "#72F7F9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          113.721218216459562,
+          34.593744085533139
+        ]
+      },
+      "properties": {
+        "gid": 7,
+        "id": 7,
+        "name": "裴度主所",
+        "radius": 6000,
+        "color": "#72F7F9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          113.851314331208386,
+          34.553329648230886
+        ]
+      },
+      "properties": {
+        "gid": 8,
+        "id": 8,
+        "name": "港九主所",
+        "radius": 5500,
+        "color": "#72F7F9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          113.530765142422396,
+          34.720281330697908
+        ]
+      },
+      "properties": {
+        "gid": 9,
+        "id": 9,
+        "name": "昌黎主所",
+        "radius": 4900,
+        "color": "#72F7F9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          113.842573217870523,
+          34.383805264687055
+        ]
+      },
+      "properties": {
+        "gid": 10,
+        "id": 10,
+        "name": "义山主所",
+        "radius": 3500,
+        "color": "#72F7F9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          113.420475813052647,
+          34.750291867095768
+        ]
+      },
+      "properties": {
+        "gid": 11,
+        "id": 11,
+        "name": "郑西主所",
+        "radius": 4000,
+        "color": "#72F7F9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          113.666979881187771,
+          34.757719843090271
+        ]
+      },
+      "properties": {
+        "gid": 1,
+        "id": 1,
+        "name": "新华主所",
+        "radius": 3600,
+        "color": "#72F7F9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          113.725972046124909,
+          34.764240867236005
+        ]
+      },
+      "properties": {
+        "gid": 2,
+        "id": 2,
+        "name": "通泰主所",
+        "radius": 3700,
+        "color": "#72F7F9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          113.677202068496882,
+          34.826723050022956
+        ]
+      },
+      "properties": {
+        "gid": 3,
+        "id": 3,
+        "name": "国基主所",
+        "radius": 4600,
+        "color": "#72F7F9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          113.52643819350547,
+          34.806255724824496
+        ]
+      },
+      "properties": {
+        "gid": 4,
+        "id": 4,
+        "name": "少康主所",
+        "radius": 3600,
+        "color": "#72F7F9"
+      }
+    }
+  ]
+}
