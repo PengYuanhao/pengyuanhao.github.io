@@ -1,2 +1,0 @@
-"use strict";(self["webpackChunkpowervue2"]=self["webpackChunkpowervue2"]||[]).push([[843],{843:function(e,n,f){f.r(n),f.d(n,{default:function(){return i}});var t=function(){var e=this,n=e._self._c;return n("div",{staticStyle:{"font-size":"40px",color:"#ffffff"}},[e._v("角色管理")])},u=[],r={name:"index"},l=r,s=f(1001),c=(0,s.Z)(l,t,u,!1,null,"bb4e88a2",null),i=c.exports}}]);
-//# sourceMappingURL=843.dc2ee64d.js.map

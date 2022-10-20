@@ -1,2 +1,0 @@
-"use strict";(self["webpackChunkpowervue2"]=self["webpackChunkpowervue2"]||[]).push([[210],{2623:function(e,f,n){n.r(f),n.d(f,{default:function(){return i}});var t=function(){var e=this,f=e._self._c;return f("div",{staticStyle:{"font-size":"40px",color:"#ffffff"}},[e._v("设备投撤管理")])},u=[],r={name:"index"},l=r,s=n(1001),c=(0,s.Z)(l,t,u,!1,null,"25df2d11",null),i=c.exports}}]);
-//# sourceMappingURL=210.0ade33fd.js.map

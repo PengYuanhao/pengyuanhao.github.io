@@ -1,2 +1,0 @@
-"use strict";(self["webpackChunkpowervue2"]=self["webpackChunkpowervue2"]||[]).push([[9],{9009:function(e,n,f){f.r(n),f.d(n,{default:function(){return i}});var t=function(){var e=this,n=e._self._c;return n("div",{staticStyle:{"font-size":"40px",color:"#ffffff"}},[e._v("接触网基础数据")])},u=[],r={name:"index"},c=r,l=f(1001),s=(0,l.Z)(c,t,u,!1,null,"379c5c37",null),i=s.exports}}]);
-//# sourceMappingURL=9.11b99597.js.map
