@@ -1,2 +1,0 @@
-"use strict";(self["webpackChunkpowervue2"]=self["webpackChunkpowervue2"]||[]).push([[871],{871:function(e,f,t){t.r(f),t.d(f,{default:function(){return i}});var n=function(){var e=this,f=e._self._c;return f("div",{staticStyle:{"font-size":"40px",color:"#ffffff"}},[e._v("设备跳闸分析")])},u=[],r={name:"trip"},c=r,l=t(1001),s=(0,l.Z)(c,n,u,!1,null,"8efef97c",null),i=s.exports}}]);
-//# sourceMappingURL=871.65965526.js.map
