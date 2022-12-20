@@ -11,7 +11,7 @@
   <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-  <title>小π</title>
+  <title>基础语法 | 小π</title>
 
   <link rel="icon" type="image/png" href="/medias/logo.png">
   <link rel="stylesheet" href="https://at.alicdn.com/t/font_1911880_c1nvbyezg17.css">
@@ -196,7 +196,7 @@
       <main class="main" id="pjax-container">
         <!-- 头部导航 -->
         
-<header class="header no-swiper  " 
+<header class="header   " 
   id="navHeader"
   style="position: fixed;
   left: 0; top: 0; z-index: 10;width: 100%;"
@@ -296,322 +296,327 @@
 </header>
         <!-- 内容区域 -->
         
+ <!-- prismjs 代码高亮 -->
+ 
 
-<div id="l_main">
-  <div class="l_content">
-    <!-- 自定义的内容 -->
-    
-    <!-- 首页座右铭 -->
-    
-    <!-- 首页公告 -->
-    
-    <!-- 首页文章置顶 -->
-    
+
+<div class="bg-dark-floor" style="position: fixed;left: 0;top: 0;width: 100%;height: 100%;z-index: -1;"></div>
+
+
+  <!-- 文章详情页顶部图片和标题 -->
 
 
 
-    <div class="bg-floor" id="home-bg-floor" style="position: fixed;left: 0;top: 0;width: 100%;height: 100%;z-index: -2;"></div>
-    <!-- 每一篇文章卡片 -->
-    <!-- hash算法 -->
 
-<section class="posts">
+<div class="post-detail-header" id="thumbnail_canvas" style="background-repeat: no-repeat; background-size: cover; 
+  background-position: center center;position: relative;background-image:url('/medias/4.jpg')">
+  <div class="post-detail-header-mask"></div>
+  <canvas id="header_canvas"style="position:absolute;bottom:0;pointer-events:none;"></canvas>
   
+  <div class="post-detail-header_info-box">
+    <div class="title-box">
+      <span class="title">
+        基础语法
+      </span>
+    </div>
     
-    <article class="post reveal" style="flex-direction: row-reverse;   ">
-      <div class="post-main">
-        <div class="post-info">
-          <div class="post-time">
-            <i class="fas fa-clock" aria-hidden="true"></i>
-            <span class="post-time">2022-12-16</span>
-          </div>
-          <div class="post-title">
-            <a class="post-title-link" href="/2022/12/16/3_%E9%80%BB%E8%BE%91/">循环条件语句</a>
-          </div>
-          <div class="post-meta">
-            <div class="post-tags">
-              <!-- 文章详情页的标签 -->
+    
+      
+        <span class="post-detail-header_date">
+          <i class="fas fa-calendar"></i> Published in：2022-12-15 |
+        </span>
+      
 
-            </div>
-            <div class="post-categories">
-              <!-- 文章详情页的分类 -->
+      
+        <span class="post-detail-header_categories">
+          <i class="iconfont iconbookmark1"></i> category：
+          
+            <a href="/categories/Python%E5%85%A5%E9%97%A8/" class="post-detail-header_category">
+              Python入门
+            </a>
+          
+        </span>
+      
 
-<div class="article-category">
-  <i class="iconfont iconbookmark1"></i>
-  <a class="article-category-link" href="/categories/Python%E5%85%A5%E9%97%A8/">Python入门</a>
+      
+    
+  </div>
+  
+  
+    <script src="/js/bubble/bubble.js"></script>
+  
 </div>
 
 
-            </div>
-          </div>
-          <div class="post-img-mobile">
-            <a href="/2022/12/16/3_%E9%80%BB%E8%BE%91/" style="background-size: cover; 
-              background-position: center center;">
-              <img class="lazyload lazyload placeholder" src="/medias/9.jpg" class="lazyload placeholder" data-srcset="/medias/9.jpg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
-            </a>
-          </div>
-          <div class="post-content">
-            if语句
+
+
+
+<div class="post-detail-content post-row" 
+  style="padding-top: 0px;">
+  <div class="main-content">
+    <article class="post post-detail">
+      <div class="post-content">
+        <h2 id="一、前序"><a href="#一、前序" class="headerlink" title="一、前序"></a>一、前序</h2><ol>
+<li><code>python</code>中六种数据类型<ul>
+<li>数字（<code>Number</code>）<ul>
+<li>整型（<code>int</code>）</li>
+<li>浮点型（<code>float</code>）</li>
+<li>复数（<code>complex</code>）：以<code>j</code>结尾表示复数</li>
+<li>布尔（<code>bool</code>）</li>
+</ul>
+</li>
+<li>字符串（<code>String</code>）</li>
+<li>列表（<code>List</code>）：<code>python</code>中使用最频繁的数据类型，有序记录一堆数据</li>
+<li>元组（<code>Tuple</code>）：有序记录一堆不可变的<code>python</code>数据集合</li>
+<li>集合（<code>Set</code>）：无序记录一堆不重复的<code>python</code>数据集合</li>
+<li>字典（<code>Dictionary</code>）：无序记录一堆<code>key-value</code>型的数据集合</li>
+</ul>
+</li>
+</ol>
+<hr>
+<ol start="2">
+<li><p>注释</p>
+<p>对代码进行解释说明的文字</p>
+<ul>
+<li><p>单行注释</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 这是单行注释</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>多行注释</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">	这是一个多行注释</span></span><br><span class="line"><span class="string">	作者、发布时间</span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+</ol>
+<hr>
+<ol start="3">
+<li><p>变量</p>
+<p>程序运行时，存储计算结果或值的抽象概念</p>
+<ul>
+<li><p>作用</p>
+<p>在程序运行时，用于记录数据</p>
+</li>
+<li><p>格式</p>
+<p>变量名 &#x3D; 变量值</p>
+</li>
+</ul>
+</li>
+</ol>
+<hr>
+<ol start="4">
+<li><p>数据类型</p>
+<p><code>type()</code>语句：用于查看数据的类型</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">name = <span class="string">&quot;小明&quot;</span></span><br><span class="line">age = <span class="number">18</span></span><br><span class="line">hasMoney = <span class="number">354.23</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">type</span>(name))  	<span class="comment"># &lt;class &#x27;str&#x27;&gt;</span></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">type</span>(age))   	<span class="comment"># &lt;class &#x27;int&#x27;&gt;</span></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">type</span>(hasMoney))	<span class="comment"># &lt;class &#x27;float&#x27;&gt;</span></span><br></pre></td></tr></table></figure></li>
+</ol>
+<hr>
+<ol start="5">
+<li><p>数据类型转换</p>
+<ul>
+<li><p><code>int(x)</code></p>
+<p>将<code>x</code>转换为一个整数</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 将字符串转为整数</span></span><br><span class="line">num = <span class="built_in">int</span>(<span class="string">&quot;23&quot;</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">type</span>(num), num)	<span class="comment"># &lt;class &#x27;int&#x27;&gt; 23</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p><code>float(x)</code></p>
+<p>将<code>x</code>转换为一个浮点数</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 将字符串转为浮点数</span></span><br><span class="line">num = <span class="built_in">float</span>(<span class="string">&quot;23.23&quot;</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">type</span>(num), num)	<span class="comment"># &lt;class &#x27;float&#x27;&gt; 23.23</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p><code>str(x)</code></p>
+<p>将<code>x</code>转换为字符串</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 将数字转为字符串</span></span><br><span class="line">str1 = <span class="built_in">str</span>(<span class="number">11.32</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">type</span>(str1), str1)	<span class="comment"># &lt;class &#x27;str&#x27;&gt; 11.32</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<blockquote>
+<p>字符串必须是纯数字才能由字符串转为数字类型</p>
+</blockquote>
+</li>
+</ol>
+<hr>
+<ol start="6">
+<li>标识符命名规则<ul>
+<li>大小写敏感</li>
+<li>不可使用关键字</li>
+<li>标识符中只允许出现英文、中文（不推荐）、数字、下划线，不能以数组开头</li>
+</ul>
+</li>
+</ol>
+<hr>
+<ol start="7">
+<li><p>运算符</p>
+<p>+、-、<em>、&#x2F;、&#x2F;&#x2F;<code>取整</code>、%<code>取余</code>、</em>*<code>指数</code></p>
+</li>
+</ol>
+<h2 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h2><ol>
+<li><p>字符串定义</p>
+<ul>
+<li><p>三种定义方式：单引号、双引号、三引号</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 在字符串内包含双引号</span></span><br><span class="line">name=<span class="string">&#x27;&quot;小明&quot;&#x27;</span></span><br><span class="line"><span class="comment"># 在字符申内包含单引号</span></span><br><span class="line">name=<span class="string">&quot;&#x27;小明&#x27;&quot;</span></span><br><span class="line"><span class="comment">#使用转义字符\解除引号的效用</span></span><br><span class="line">name=<span class="string">&quot;\&quot;小明\&quot;&quot;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>引号嵌套</p>
+<ul>
+<li>可以使用\来进行转义</li>
+<li>单引号内可以写双引号或双引号内可以写单引号</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ol start="2">
+<li><p>字符串拼接</p>
+<ul>
+<li><p>通过加号拼接字符串</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 字符串无法通过加号与数字拼接，报TypeError错误</span></span><br><span class="line">name = <span class="string">&quot;小明&quot;</span></span><br><span class="line">address = <span class="string">&quot;郑州&quot;</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;我是&quot;</span> + name + <span class="string">&quot;，我目前在&quot;</span> + address)	<span class="comment"># 我是小明，我目前在郑州</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>通过占位拼接字符串</p>
+<p><code>%s</code>字符串占位符，其中<code>%</code>表示占位，<code>s</code>表示将变量字符串放入占位的地方</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">name = <span class="string">&quot;小明&quot;</span></span><br><span class="line">address = <span class="string">&quot;郑州&quot;</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;我是%s，我目前在%s&quot;</span> % (name, address))	<span class="comment"># 我是小明，我目前在郑州</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p><code>%s</code>：将内容转换为字符串</p>
+<p><code>%d</code>：将内容转换为整型</p>
+<p><code>%f</code>：将内容转换为浮点型</p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+</ol>
+<hr>
+<ol start="3">
+<li><p>字符串格式化（精度控制）</p>
+<p>使用辅助符号<code>m.n</code>进行数据的宽度与精度控制</p>
+<ul>
+<li><code>m</code>：控制宽度，设置宽度效益数字自身时不生效（小数点和小数部分也会纳入到宽度计算中）</li>
+<li><code>.n</code>：控制精度，小数点会四舍五入</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">num1 = <span class="number">11</span></span><br><span class="line">num2 = <span class="number">11.345</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;数字11宽度限制5，结果是：%5d&quot;</span> % num1)  		<span class="comment">#    11</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;数字11宽度限制1，结果是：%1d&quot;</span> % num1)		<span class="comment"># 11</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;数字11.345宽度限制4，结果是：%4f&quot;</span> % num2)	<span class="comment"># 11.35</span></span><br></pre></td></tr></table></figure></li>
+</ol>
+<hr>
+<ol start="4">
+<li><p>字符串格式化（快速格式化）</p>
+<p>语法：<code>f&quot;内容&#123;变量&#125;&quot;</code></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">name = <span class="string">&quot;小明&quot;</span></span><br><span class="line">age = <span class="number">18</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;我是<span class="subst">&#123;name&#125;</span>，我今年<span class="subst">&#123;age&#125;</span>岁了&quot;</span>)	<span class="comment"># 我是小明，我今年18岁了</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>快速格式化的方式不限数据类型，不做精度控制</p>
+</blockquote>
+</li>
+</ol>
+<hr>
+<ol start="5">
+<li><p>表达式格式化</p>
+<p>含义：一条具有明确执行结果的代码语句</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">print</span>(<span class="string">&quot;1 * 1的结果是：%d&quot;</span> % (<span class="number">1</span> * <span class="number">1</span>))	<span class="comment"># 1</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;1 * 2的结果是: <span class="subst">&#123;<span class="number">1</span> * <span class="number">2</span>&#125;</span>&quot;</span>)	<span class="comment"># 2</span></span><br></pre></td></tr></table></figure></li>
+</ol>
+<hr>
+<ol start="6">
+<li><p>数据输入（<code>input</code>）</p>
+<p>输入的数据是字符串类型</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">age = <span class="built_in">input</span>(<span class="string">&quot;你多大了？&quot;</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;哦，你：%d了&quot;</span> % age)</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h2 id="布尔类型与比较运算符"><a href="#布尔类型与比较运算符" class="headerlink" title="布尔类型与比较运算符"></a>布尔类型与比较运算符</h2><p>布尔类型字面量：<code>True</code>表示真，<code>False</code>表示假</p>
+<blockquote>
+<p>布尔值可直接赋值，比较运算的返回结果也可返回布尔值</p>
+</blockquote>
+<p>比较运算符：&#x3D;&#x3D;、!&#x3D;、&gt;、&lt;、&gt;&#x3D;、&lt;&#x3D;</p>
+
+      </div>
+      <div class="post-tags-categories">
+        
+      </div>
+      
+    </article>
+    <!-- 上一篇文章和下一篇文章 -->
+    
+      <!-- 文章详情页的上一页和下一页 -->
+<div class="post-nav">
+
+
+
+  
+  <div class="post-nav-prev post-nav-item">
+    <div class="post-nav-img" style="background-size: cover; 
+      background-position: center center;">
+      <img class="lazyload lazyload placeholder" src="/medias/9.jpg" class="lazyload placeholder" data-srcset="/medias/9.jpg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
+    </div>
+    <a href="/2022/12/16/3_%E9%80%BB%E8%BE%91/" class="post-nav-link">
+      <div class="title">
+        <i class="fas fa-angle-left"></i> Prev:
+        <div class="title-text">循环条件语句</div>
+      </div>
+      
+      <!-- <div class="content">
+        if语句
 if语句
 格式：
 12if 判断条件:    条件成立所执行代码块
 
 if-else语句
 格式：
-1234if 判断条件:    条件成立所执行代码块else:    条件不成立所执行代码块
+1234if
+      </div> -->
+    </a>
+  </div>
 
-if-elif-else
-格式：
-1
-          </div>
-        </div>
-        <div class="post-more">
-          <a href="/2022/12/16/3_%E9%80%BB%E8%BE%91/">
-            <i class="iconfont iconmore" pointer style="float: right;  " title="阅读更多"></i>
-          </a>
-        </div>
-      </div>
-      <div class="post-img">
-        <a href="/2022/12/16/3_%E9%80%BB%E8%BE%91/" style="background-size: cover; 
-          background-position: center center;">
-          <img class="lazyload lazyload placeholder" src="/medias/9.jpg" class="lazyload placeholder" data-srcset="/medias/9.jpg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
-        </a>
-      </div>
-    </article>
+
+
   
-    
-    <article class="post reveal" style="   ">
-      <div class="post-main">
-        <div class="post-info">
-          <div class="post-time">
-            <i class="fas fa-clock" aria-hidden="true"></i>
-            <span class="post-time">2022-12-15</span>
-          </div>
-          <div class="post-title">
-            <a class="post-title-link" href="/2022/12/15/2_%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/">基础语法</a>
-          </div>
-          <div class="post-meta">
-            <div class="post-tags">
-              <!-- 文章详情页的标签 -->
-
-            </div>
-            <div class="post-categories">
-              <!-- 文章详情页的分类 -->
-
-<div class="article-category">
-  <i class="iconfont iconbookmark1"></i>
-  <a class="article-category-link" href="/categories/Python%E5%85%A5%E9%97%A8/">Python入门</a>
-</div>
-
-
-            </div>
-          </div>
-          <div class="post-img-mobile">
-            <a href="/2022/12/15/2_%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/" style="background-size: cover; 
-              background-position: center center;">
-              <img class="lazyload lazyload placeholder" src="/medias/4.jpg" class="lazyload placeholder" data-srcset="/medias/4.jpg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
-            </a>
-          </div>
-          <div class="post-content">
-            一、前序
-python中六种数据类型
-数字（Number）
-整型（int）
-浮点型（float）
-复数（complex）：以j结尾表示复数
-布尔（bool）
-
-
-字符串（String）
-列表（List）：python中使用最频繁的数据类型，
-          </div>
-        </div>
-        <div class="post-more">
-          <a href="/2022/12/15/2_%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/">
-            <i class="iconfont iconmore" pointer style="  " title="阅读更多"></i>
-          </a>
-        </div>
+  <div class="post-nav-next post-nav-item">
+    <div class="post-nav-img" style="background-size: cover; 
+      background-position: center center;">
+      <img class="lazyload lazyload placeholder" src="/medias/5.jpg" class="lazyload placeholder" data-srcset="/medias/5.jpg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" src="" alt="">
+    </div>
+    <a href="/2022/12/14/1_%E5%88%9D%E8%AF%86python/" class="post-nav-link">
+      <div class="title">
+        Next: <i class="fas fa-angle-right"></i>
+        <div class="title-text">初识python</div>
       </div>
-      <div class="post-img">
-        <a href="/2022/12/15/2_%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/" style="background-size: cover; 
-          background-position: center center;">
-          <img class="lazyload lazyload placeholder" src="/medias/4.jpg" class="lazyload placeholder" data-srcset="/medias/4.jpg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
-        </a>
-      </div>
-    </article>
-  
-    
-    <article class="post reveal" style="flex-direction: row-reverse;   ">
-      <div class="post-main">
-        <div class="post-info">
-          <div class="post-time">
-            <i class="fas fa-clock" aria-hidden="true"></i>
-            <span class="post-time">2022-12-14</span>
-          </div>
-          <div class="post-title">
-            <a class="post-title-link" href="/2022/12/14/1_%E5%88%9D%E8%AF%86python/">初识python</a>
-          </div>
-          <div class="post-meta">
-            <div class="post-tags">
-              <!-- 文章详情页的标签 -->
-
-            </div>
-            <div class="post-categories">
-              <!-- 文章详情页的分类 -->
-
-<div class="article-category">
-  <i class="iconfont iconbookmark1"></i>
-  <a class="article-category-link" href="/categories/Python%E5%85%A5%E9%97%A8/">Python入门</a>
-</div>
-
-
-            </div>
-          </div>
-          <div class="post-img-mobile">
-            <a href="/2022/12/14/1_%E5%88%9D%E8%AF%86python/" style="background-size: cover; 
-              background-position: center center;">
-              <img class="lazyload lazyload placeholder" src="/medias/5.jpg" class="lazyload placeholder" data-srcset="/medias/5.jpg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
-            </a>
-          </div>
-          <div class="post-content">
-            python安装步骤
+      <!-- <div class="content">
+        python安装步骤
 到 https://www.python.org/downloads/ 下载python的安装包
-运行安装下载的安装包
-第一步将Add Pyhton 3.xx to PATH选项勾选上
-点击Custommize ins
-          </div>
-        </div>
-        <div class="post-more">
-          <a href="/2022/12/14/1_%E5%88%9D%E8%AF%86python/">
-            <i class="iconfont iconmore" pointer style="float: right;  " title="阅读更多"></i>
-          </a>
-        </div>
-      </div>
-      <div class="post-img">
-        <a href="/2022/12/14/1_%E5%88%9D%E8%AF%86python/" style="background-size: cover; 
-          background-position: center center;">
-          <img class="lazyload lazyload placeholder" src="/medias/5.jpg" class="lazyload placeholder" data-srcset="/medias/5.jpg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
-        </a>
-      </div>
-    </article>
-  
-    
-    <article class="post reveal" style="   ">
-      <div class="post-main">
-        <div class="post-info">
-          <div class="post-time">
-            <i class="fas fa-clock" aria-hidden="true"></i>
-            <span class="post-time">2021-11-14</span>
-          </div>
-          <div class="post-title">
-            <a class="post-title-link" href="/2021/11/14/1_vue2%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8/">vue2基础入门</a>
-          </div>
-          <div class="post-meta">
-            <div class="post-tags">
-              <!-- 文章详情页的标签 -->
 
-            </div>
-            <div class="post-categories">
-              <!-- 文章详情页的分类 -->
+      </div> -->
+    </a>
+  </div>
 
-<div class="article-category">
-  <i class="iconfont iconbookmark1"></i>
-  <a class="article-category-link" href="/categories/Vue2%E5%9F%BA%E7%A1%80/">Vue2基础</a>
 </div>
 
-
-            </div>
-          </div>
-          <div class="post-img-mobile">
-            <a href="/2021/11/14/1_vue2%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8/" style="background-size: cover; 
-              background-position: center center;">
-              <img class="lazyload lazyload placeholder" src="/medias/2.jpg" class="lazyload placeholder" data-srcset="/medias/2.jpg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
-            </a>
-          </div>
-          <div class="post-content">
-            1-初识Vue
-想让Vue工作，就必须创建一个Vue实例，且传入一个配置对象
-root容器里的代码依然符合html规范，只不过混入了一些特殊的Vue语法
-root容器里的代码被称为Vue模板
-容器与Vue实例是一一对应关系
-真实开发中只有一
-          </div>
-        </div>
-        <div class="post-more">
-          <a href="/2021/11/14/1_vue2%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8/">
-            <i class="iconfont iconmore" pointer style="  " title="阅读更多"></i>
-          </a>
-        </div>
-      </div>
-      <div class="post-img">
-        <a href="/2021/11/14/1_vue2%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8/" style="background-size: cover; 
-          background-position: center center;">
-          <img class="lazyload lazyload placeholder" src="/medias/2.jpg" class="lazyload placeholder" data-srcset="/medias/2.jpg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
-        </a>
-      </div>
-    </article>
-  
     
-    <article class="post reveal" style="flex-direction: row-reverse;   ">
-      <div class="post-main">
-        <div class="post-info">
-          <div class="post-time">
-            <i class="fas fa-clock" aria-hidden="true"></i>
-            <span class="post-time">2021-11-14</span>
-          </div>
-          <div class="post-title">
-            <a class="post-title-link" href="/2021/11/14/2_vue2%E7%BB%84%E4%BB%B6/">vue2基础入门</a>
-          </div>
-          <div class="post-meta">
-            <div class="post-tags">
-              <!-- 文章详情页的标签 -->
+    
 
-            </div>
-            <div class="post-categories">
-              <!-- 文章详情页的分类 -->
+    <!-- 打赏 -->
+    
 
-<div class="article-category">
-  <i class="iconfont iconbookmark1"></i>
-  <a class="article-category-link" href="/categories/Vue2%E5%9F%BA%E7%A1%80/">Vue2基础</a>
-</div>
+    <!-- 分享 -->
+    
+      <!-- https://github.com/overtrue/share.js -->
+<!-- 文章详情页的分享 -->
+<div class="social-share" data-sites="qq,qzone,wechat,weibo" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+
+<script src="/js/shareJs/social-share.min.js"></script>
+</script>
+
+<style>
+  .social-share {
+    margin: 20px 0;
+  }
+</style>
 
 
-            </div>
-          </div>
-          <div class="post-img-mobile">
-            <a href="/2021/11/14/2_vue2%E7%BB%84%E4%BB%B6/" style="background-size: cover; 
-              background-position: center center;">
-              <img class="lazyload lazyload placeholder" src="/medias/2.jpg" class="lazyload placeholder" data-srcset="/medias/2.jpg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
-            </a>
-          </div>
-          <div class="post-content">
-            1-非单文件组件组件定义：
-​		实现应用中局部功能代码和资源的集合。
+    
+    
+    <!-- 评论 -->
+    <!-- 评论 -->
 
-模块化：当应用中的js都以模块来编写的，那这个应用就是模块化的应用
-组件化：当应用中的功能都是多组件的方式来编写，那这个应用就是一个组件化的应用
-非单文件组件定义：
+  <div id="myComment">
+    
+      <div id="gitment-container"></div>
 
-          </div>
-        </div>
-        <div class="post-more">
-          <a href="/2021/11/14/2_vue2%E7%BB%84%E4%BB%B6/">
-            <i class="iconfont iconmore" pointer style="float: right;  " title="阅读更多"></i>
-          </a>
-        </div>
-      </div>
-      <div class="post-img">
-        <a href="/2021/11/14/2_vue2%E7%BB%84%E4%BB%B6/" style="background-size: cover; 
-          background-position: center center;">
-          <img class="lazyload lazyload placeholder" src="/medias/2.jpg" class="lazyload placeholder" data-srcset="/medias/2.jpg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
-        </a>
-      </div>
-    </article>
-  
-</section>
-    <!-- 翻页 -->
     
   </div>
 
+<!-- comment script in themes\hexo-theme-bamboo\layout\_partial\scripts\index.ejs -->
+
+
+  </div>
+
+  <!-- 目录 -->
   
 <aside id='l_side'>
   
@@ -648,39 +653,29 @@ root容器里的代码被称为Vue模板
   <div class="layout_sticky">    
     
       
-        
-    <section class="widget side_category">
-      
+<section class="widget side_toc">
+  
   <header>
     
-      <a style="color: " href='/blog/categories/'><i class="fas fa-folder-open fa-fw" aria-hidden="true"></i><span class='name'>文章分类</span></a>
+      <i style="color: " class="fas fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
     
   </header>
 
 
-      <div class='content'>
-        <ul class="entry navigation">
-          
-            <li><a class="flat-box"
-              title="/categories/Python%E5%85%A5%E9%97%A8/" href="/categories/Python%E5%85%A5%E9%97%A8/"
-              id="categoriesPythonE585A5E997A8"
-              ><div class='name'>Python入门</div><div class='badge'>(3)</div></a></li>
-          
-            <li><a class="flat-box"
-              title="/categories/Vue2%E5%9F%BA%E7%A1%80/" href="/categories/Vue2%E5%9F%BA%E7%A1%80/"
-              id="categoriesVue2E59FBAE7A180"
-              ><div class='name'>Vue2基础</div><div class='badge'>(2)</div></a></li>
-          
-        </ul>
+  <div class='content'>
+    <div class="toc-main">
+      <div class="toc-content">
+        <!-- <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E5%89%8D%E5%BA%8F"><span class="toc-text">一、前序</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AD%97%E7%AC%A6%E4%B8%B2"><span class="toc-text">字符串</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B8%83%E5%B0%94%E7%B1%BB%E5%9E%8B%E4%B8%8E%E6%AF%94%E8%BE%83%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="toc-text">布尔类型与比较运算符</span></a></li></ol> -->
+        <div class="toc"></div>
       </div>
-    </section>
-  
-  
-      
-      
-        
-  
-      
+    </div>
+  </div>
+</section>
+<!-- 手机端目录按钮 -->
+<div id="toc-mobile-btn">
+  <i class="fas fa-list-ul" aria-hidden="true"></i>
+</div>
+
       
   <section class="widget side_recent_post">
     
@@ -806,66 +801,164 @@ root容器里的代码被称为Vue模板
     </div>
   </section>
 
-      
-      <section class="widget side_webinfo">
-  
-  <header>
-    
-      <i style="color: " class="fas fa-chart-line fa-fw" aria-hidden="true"></i><span class='name'>站点信息</span>
-    
-  </header>
-
-
-  <div class='content'>
-    <div class="webinfo">
-      
-        <div class="webinfo-item">
-          <div>文章数目：</div>
-          <div>5 篇</div>
-        </div>
-      
-
-      
-        <div class="webinfo-item">
-          <div>已运行时间：</div>
-          <div id="webinfo-runtime-count" publish_date="03/24/2020 21:34:09"></div>
-        </div>
-        <script>
-          var BirthDay = new Date(new Date('2022/10/01'));
-          var today = new Date();
-          var timeold = (today.getTime() - BirthDay.getTime());
-          var daysold = Math.floor(timeold / (24 * 60 * 60 * 1000));
-          document.getElementById('webinfo-runtime-count').innerHTML = daysold + ' 天';
-        </script>
-      
-
-
-      
-
-      
-
-      
-
-      
-    </div>
-  </div>
-</section>
-      
     
   </div>
 </aside>
 
+
+  <!-- 图片放大 Wrap images with fancybox support -->
+  <script src="/js/wrapImage.js"></script>
 </div>
-<!-- 花瓣和雪花飘落 -->
-<!-- 雪花和花瓣特效 -->
 
+<!-- 文章详情页背景图 -->
+<div id="appBgSwiper" style="position: fixed;left: 0;top: 0;width: 100%;height: 100%;z-index: -2;"
+	:style="{'background-color': bgColor ? bgColor : 'transparent'}">
+	<transition-group tag="ul" :name="names">
+		<li v-for='(image,index) in img' :key='index' v-show="index === mark" class="bg-swiper-box">
+			<img :src="image" class="bg-swiper-img no-lazy">
+		</li>
+	</transition-group>
+</div>
+<script>
+	var vm = new Vue({
+		el: '#appBgSwiper',
+		data: {
+			names: '' || 'fade' || 'fade', // translate-fade fade
+			mark: 0,
+			img: [],
+			bgColor: '',
+			time: null
+		},
+		methods: {   //添加方法
+			change(i, m) {
+				if (i > m) {
+					// this.names = 'fade';
+				} else if (i < m) {
+					// this.names = 'fade';
+				} else {
+					return;
+				}
+				this.mark = i;
+			},
+			prev() {
+				// this.names = 'fade';
+				this.mark--;
+				if (this.mark === -1) {
+					this.mark = 3;
+					return
+				}
+			},
+			next() {
+				// this.names = 'fade';
+				this.mark++;
+				if (this.mark === this.img.length) {
+					this.mark = 0;
+					return
+				}
+			},
+			autoPlay() {
+				// this.names = 'fade';
+				this.mark++;
+				if (this.mark === this.img.length) {
+					this.mark = 0;
+					return
+				}
+			},
+			play() {
+				let bgImgDelay = '' || '180000'
+				let delay = parseInt(bgImgDelay) || 180000;
+				this.time = setInterval(this.autoPlay, delay);
+			},
+			enter() {
+				clearInterval(this.time);
+			},
+			leave() {
+				this.play();
+			}
+		},
+		created() {
+			this.play()
+		},
+		beforeDestroy() {
+			clearInterval(this.time);
+		},
+		mounted() {
+			let prop = '' || '';
+			let isImg = prop.includes('.bmp') || prop.includes('.jpg') || prop.includes('.png') || prop.includes('.tif') || prop.includes('.gif') || prop.includes('.pcx') || prop.includes('.tga') || prop.includes('.exif') || prop.includes('.fpx') || prop.includes('.psd') || prop.includes('.cdr') || prop.includes('.pcd') || prop.includes('.dxf') || prop.includes('.ufo') || prop.includes('.eps') || prop.includes('.ai') || prop.includes('.raw') || prop.includes('.WMF') || prop.includes('.webp') || prop.includes('.jpeg') || prop.includes('http://') || prop.includes('https://')
+			if (isImg) {
+				let img = prop.split(',');
+				let configRoot = '/'
+				let arrImg = [];
+				img.forEach(el => {
+					var Expression = /http(s)?:\/\/([\w-]+\.)+[\w-]+(\/[\w- .\/?%&=]*)?/;
+					var objExp = new RegExp(Expression);
+
+					if (objExp.test(el)) {
+						// http or https
+						arrImg.push(el);
+					} else {
+						// 非http or https开头
+						// 本地文件
+						let firstStr = el.charAt(0);
+						if (firstStr == '/') {
+							el = el.substr(1); // 删除第一个字符 '/',因为 configRoot最后一个字符为 /
+						}
+						el = configRoot + el;
+						arrImg.push(el);
+					}
+				})
+				this.img = arrImg;
+			} else {
+				this.bgColor = prop;
+			}
+		}
+	})
+</script>
+
+<style>
+	.bg-swiper-box {
+		position: absolute;
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
+
+	.bg-swiper-img {
+		object-fit: cover;
+		width: 100%;
+		height: 100%;
+	}
+</style>
+
+
+
+
+  <script>
+  function loadMermaid() {
+    if (document.getElementsByClassName('mermaid').length) {
+      if (window.mermaidJsLoad) mermaid.init()
+      else {
+        loadScript('https://unpkg.com/mermaid/dist/mermaid.min.js').then(() => {
+          window.mermaidJsLoad = true
+          mermaid.initialize({
+            theme: 'default',
+          })
+          if ('true') {
+            mermaid.init();
+          }
+        })
+      }
+    }
+  };
+  document.addEventListener("DOMContentLoaded", function () {
+    loadMermaid();
+  })
+
+  document.addEventListener('pjax:complete', function () {
+    loadMermaid();
+  })
   
-    <script src="/js/falling/snow.js"></script>
-  
-
-
-
-<!-- 灯笼 -->
+</script>
 
 
       </main>
