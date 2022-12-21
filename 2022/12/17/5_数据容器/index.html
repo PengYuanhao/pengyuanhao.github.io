@@ -11,7 +11,7 @@
   <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-  <title>初识python | 小π</title>
+  <title>数据容器 | 小π</title>
 
   <link rel="icon" type="image/png" href="/medias/logo.png">
   <link rel="stylesheet" href="https://at.alicdn.com/t/font_1911880_c1nvbyezg17.css">
@@ -309,21 +309,21 @@
 
 
 <div class="post-detail-header" id="thumbnail_canvas" style="background-repeat: no-repeat; background-size: cover; 
-  background-position: center center;position: relative;background-image:url('/medias/5.jpg')">
+  background-position: center center;position: relative;background-image:url('/medias/4.jpg')">
   <div class="post-detail-header-mask"></div>
   <canvas id="header_canvas"style="position:absolute;bottom:0;pointer-events:none;"></canvas>
   
   <div class="post-detail-header_info-box">
     <div class="title-box">
       <span class="title">
-        初识python
+        数据容器
       </span>
     </div>
     
     
       
         <span class="post-detail-header_date">
-          <i class="fas fa-calendar"></i> Published in：2022-12-14 |
+          <i class="fas fa-calendar"></i> Published in：2022-12-17 |
         </span>
       
 
@@ -356,23 +356,72 @@
   <div class="main-content">
     <article class="post post-detail">
       <div class="post-content">
-        <h2 id="python安装步骤"><a href="#python安装步骤" class="headerlink" title="python安装步骤"></a>python安装步骤</h2><ol>
-<li>到 <a target="_blank" rel="noopener" href="https://www.python.org/downloads/">https://www.python.org/downloads/</a> 下载<code>python</code>的安装包</li>
-<li>运行安装下载的安装包</li>
-<li>第一步将<code>Add Pyhton 3.xx to PATH</code>选项勾选上</li>
-<li>点击<code>Custommize installation</code></li>
-<li>点击<code>Next</code></li>
-<li>配置安装路径并点击<code>Install</code></li>
-<li>关闭路径长度限制</li>
+        <h2 id="入门"><a href="#入门" class="headerlink" title="入门"></a>入门</h2><p>数据容器：一种可以容纳多份数据的数据类型，容纳的每一份数据称之为1个元素。每个元素都可以是任意类型的数据。</p>
+<p>数据容器分为5类：<code>列表</code>、<code>元组</code>、<code>字符串</code>、<code>集合</code>、<code>字典</code></p>
+<h2 id="列表（list）"><a href="#列表（list）" class="headerlink" title="列表（list）"></a>列表（list）</h2><ol>
+<li><p>基础语法</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 列表中的每一个数据称之为元素，列表可以存储多个不同类型的元素</span></span><br><span class="line"><span class="comment"># 字面量</span></span><br><span class="line">[ele1, ele2, ele3, ...]</span><br><span class="line"><span class="comment"># 定义变量</span></span><br><span class="line">变量名 = [ele1, ele2, ele3, ...]</span><br><span class="line"><span class="comment"># 定义空列表</span></span><br><span class="line">变量名 = []</span><br><span class="line">变量名 = <span class="built_in">list</span>()</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>下标索引</p>
+<ul>
+<li>从前向后方向，从0开始，依次递增，可通过下标索引取出指定位置的元素。</li>
+<li>反向下标索引，从后向前方向，从-1开始，依次递减</li>
+</ul>
+</li>
+<li><p>列表常用的操作方法</p>
+<ul>
+<li><p><code>index()</code></p>
+<p>查找指定元素在列表中的下标，如果找不到，报错<code>ValueError</code></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 语法</span></span><br><span class="line">列表.index(元素)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><code>insert()</code></p>
+<p>在指定的下标位置插入指定的元素</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 语法</span></span><br><span class="line">列表.insert(下标, 元素)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><code>append()</code></p>
+<p>将指定元素（追加单个元素）追加到列表的尾部</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 语法</span></span><br><span class="line">列表.append(元素)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><code>extend()</code></p>
+<p>将其他数据容器的内容提取出来，依次追加到列表的尾部</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 语法</span></span><br><span class="line">列表.extend(其他数据容器)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><code>del</code></p>
+<p>删除列表中的指定元素</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 语法</span></span><br><span class="line"><span class="keyword">del</span> 列表[下标]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 例子</span></span><br><span class="line">myList = [<span class="string">&quot;小明&quot;</span>, <span class="string">&quot;小红&quot;</span>, <span class="string">&quot;小芳&quot;</span>]</span><br><span class="line"><span class="keyword">del</span> myList[<span class="number">1</span>]</span><br><span class="line"><span class="built_in">print</span>(myList)	<span class="comment"># [&#x27;小明&#x27;, &#x27;小芳&#x27;]</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p><code>pop()</code></p>
+<p>删除列表中的指定元素，返回值为取出的元素</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 语法</span></span><br><span class="line">列表.pop(下标)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 例子</span></span><br><span class="line">myList = [<span class="string">&quot;小明&quot;</span>, <span class="string">&quot;小红&quot;</span>, <span class="string">&quot;小芳&quot;</span>]</span><br><span class="line">ele = myList.pop(<span class="number">1</span>)</span><br><span class="line"><span class="built_in">print</span>(myList)	<span class="comment"># [&#x27;小明&#x27;, &#x27;小芳&#x27;]</span></span><br><span class="line"><span class="built_in">print</span>(ele)		<span class="comment"># 小红</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p><code>remove()</code></p>
+<p>删除某个元素在列表中的第一个匹配项</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 语法</span></span><br><span class="line">列表.remove(元素)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><code>clear()</code></p>
+<p>清空整个列表</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 语法</span></span><br><span class="line">列表.clear()</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><code>count()</code></p>
+<p>统计某个元素在列表中的数量，返回值为统计的个数</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 语法</span></span><br><span class="line">列表.count(元素)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><code>len()</code></p>
+<p>统计整个列表的长度，返回值为长度</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 语法</span></span><br><span class="line"><span class="built_in">len</span>(列表)</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><p>列表的循环遍历</p>
+<ul>
+<li><p><code>while</code>循环遍历</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">index = <span class="number">0</span></span><br><span class="line">myList = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</span><br><span class="line"><span class="keyword">while</span> index &lt; <span class="built_in">len</span>(myList):</span><br><span class="line">    <span class="built_in">print</span>(myList[index])</span><br><span class="line">    <span class="comment"># 退出循环的关键</span></span><br><span class="line">    index += <span class="number">1</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p><code>for</code>循环遍历</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">     </span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
 </ol>
-<blockquote>
-<p>安装<code>python</code>时未勾选<code>Add Pyhton 3.xx to PATH</code>，可通过配置环境变量来解决问题</p>
-</blockquote>
-<h2 id="安装集成开发环境Pycharm"><a href="#安装集成开发环境Pycharm" class="headerlink" title="安装集成开发环境Pycharm"></a>安装集成开发环境Pycharm</h2><ol>
-<li>下载地址：<a target="_blank" rel="noopener" href="https://www.jetbrains.com/pycharm/">https://www.jetbrains.com/pycharm/</a> （选择专业版下载）</li>
-<li>破解教程：<a target="_blank" rel="noopener" href="https://www.quanxiaoha.com/pycharm-pojie/pycharm-pojie-jihuoma.html">https://www.quanxiaoha.com/pycharm-pojie/pycharm-pojie-jihuoma.html</a> （破解工具U盘）</li>
-</ol>
-
+<h2 id="元组（）"><a href="#元组（）" class="headerlink" title="元组（）"></a>元组（）</h2>
       </div>
       <div class="post-tags-categories">
         
@@ -390,21 +439,18 @@
   <div class="post-nav-prev post-nav-item">
     <div class="post-nav-img" style="background-size: cover; 
       background-position: center center;">
-      <img class="lazyload lazyload placeholder" src="/medias/4.jpg" class="lazyload placeholder" data-srcset="/medias/4.jpg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
+      <img class="lazyload lazyload placeholder" src="/medias/8.jpg" class="lazyload placeholder" data-srcset="/medias/8.jpg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
     </div>
-    <a href="/2022/12/15/2_%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/" class="post-nav-link">
+    <a href="/2022/12/17/4_%E5%87%BD%E6%95%B0/" class="post-nav-link">
       <div class="title">
         <i class="fas fa-angle-left"></i> Prev:
-        <div class="title-text">基础语法</div>
+        <div class="title-text">函数</div>
       </div>
       
       <!-- <div class="content">
-        一、前序
-python中六种数据类型
-数字（Number）
-整型（int）
-浮点型（float）
-复数（complex）
+        前序
+函数是已经组织好的、可重复使用的、用于实现特定功能的代码段
+使用函数可以将功能封装在函数中，重复使用，提高代码的复
       </div> -->
     </a>
   </div>
@@ -415,17 +461,22 @@ python中六种数据类型
   <div class="post-nav-next post-nav-item">
     <div class="post-nav-img" style="background-size: cover; 
       background-position: center center;">
-      <img class="lazyload lazyload placeholder" src="/medias/2.jpg" class="lazyload placeholder" data-srcset="/medias/2.jpg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" src="" alt="">
+      <img class="lazyload lazyload placeholder" src="/medias/9.jpg" class="lazyload placeholder" data-srcset="/medias/9.jpg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" src="" alt="">
     </div>
-    <a href="/2021/11/14/1_vue2%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8/" class="post-nav-link">
+    <a href="/2022/12/16/3_%E9%80%BB%E8%BE%91/" class="post-nav-link">
       <div class="title">
         Next: <i class="fas fa-angle-right"></i>
-        <div class="title-text">vue2基础入门</div>
+        <div class="title-text">循环条件语句</div>
       </div>
       <!-- <div class="content">
-        1-初识Vue
-想让Vue工作，就必须创建一个Vue实例，且传入一个配置对象
-root容器里的代码依然符合html规范，
+        if语句
+if语句
+格式：
+12if 判断条件:    条件成立所执行代码块
+
+if-else语句
+格式：
+1234if
       </div> -->
     </a>
   </div>
@@ -520,7 +571,7 @@ root容器里的代码依然符合html规范，
   <div class='content'>
     <div class="toc-main">
       <div class="toc-content">
-        <!-- <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#python%E5%AE%89%E8%A3%85%E6%AD%A5%E9%AA%A4"><span class="toc-text">python安装步骤</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85%E9%9B%86%E6%88%90%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83Pycharm"><span class="toc-text">安装集成开发环境Pycharm</span></a></li></ol> -->
+        <!-- <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%A5%E9%97%A8"><span class="toc-text">入门</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%97%E8%A1%A8%EF%BC%88list%EF%BC%89"><span class="toc-text">列表（list）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%83%E7%BB%84%EF%BC%88%EF%BC%89"><span class="toc-text">元组（）</span></a></li></ol> -->
         <div class="toc"></div>
       </div>
     </div>
