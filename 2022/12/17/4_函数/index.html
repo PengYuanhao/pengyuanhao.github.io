@@ -11,7 +11,7 @@
   <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-  <title>(四)函数 | 小π</title>
+  <title>函数 | 小π</title>
 
   <link rel="icon" type="image/png" href="/medias/logo.png">
   <link rel="stylesheet" href="https://at.alicdn.com/t/font_1911880_c1nvbyezg17.css">
@@ -309,14 +309,14 @@
 
 
 <div class="post-detail-header" id="thumbnail_canvas" style="background-repeat: no-repeat; background-size: cover; 
-  background-position: center center;position: relative;background-image:url('/medias/4.jpg')">
+  background-position: center center;position: relative;background-image:url('/medias/8.jpg')">
   <div class="post-detail-header-mask"></div>
   <canvas id="header_canvas"style="position:absolute;bottom:0;pointer-events:none;"></canvas>
   
   <div class="post-detail-header_info-box">
     <div class="title-box">
       <span class="title">
-        (四)函数
+        函数
       </span>
     </div>
     
@@ -388,7 +388,59 @@
 </ul>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 返回a和b</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">test_return</span>():</span><br><span class="line">    a = <span class="number">1</span></span><br><span class="line">    b = <span class="number">2</span></span><br><span class="line">    <span class="keyword">return</span> a,b</span><br><span class="line">x, y = test_return()</span><br><span class="line"><span class="built_in">print</span>(x)	<span class="comment"># 1</span></span><br><span class="line"><span class="built_in">print</span>(y)	<span class="comment"># 2</span></span><br></pre></td></tr></table></figure>
 
-<h2 id="函数多种传参方式"><a href="#函数多种传参方式" class="headerlink" title="函数多种传参方式"></a>函数多种传参方式</h2><h2 id="匿名函数"><a href="#匿名函数" class="headerlink" title="匿名函数"></a>匿名函数</h2>
+<h2 id="函数多种传参方式"><a href="#函数多种传参方式" class="headerlink" title="函数多种传参方式"></a>函数多种传参方式</h2><p>函数参数非为4类：位置参数、关健字参数、缺省参数、不定长参数</p>
+<ol>
+<li><p>位置参数</p>
+<p>调用函数时根据函数定义的参数位置来传递参数</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">user_info</span>(<span class="params">name, age, gender</span>):</span><br><span class="line">  <span class="built_in">print</span>(name, age, gender)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 传递的参数和定义参数的顺序及个数必须一致</span></span><br><span class="line">user_info(<span class="string">&quot;小明&quot;</span>, <span class="number">18</span>, <span class="string">&quot;male&quot;</span>)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>关键字参数</p>
+<p>函数调用时通过<code>key = value</code>形式传递参数，使函数更加清晰、易用，清楚参数的顺序要求</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">user_info</span>(<span class="params">name, age, gender</span>):</span><br><span class="line">  <span class="built_in">print</span>(name, age, gender)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 关键字传参</span></span><br><span class="line">user_info(<span class="string">&quot;小明&quot;</span>, gender = <span class="string">&quot;male&quot;</span>, age = <span class="number">18</span>)</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>和位置参数混用时，位置参数必须在前面且匹配参数顺序</p>
+</blockquote>
+</li>
+<li><p>缺省参数（默认参数）</p>
+<p>定义函数时为参数定义默认值，调用时可不对拥有默认值的参数传值</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">user_info</span>(<span class="params">name, age, gender = <span class="string">&quot;male&quot;</span></span>):</span><br><span class="line">  <span class="built_in">print</span>(name, age, gender)</span><br><span class="line">  </span><br><span class="line">user_info(<span class="string">&quot;小明&quot;</span>, <span class="number">18</span>)</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>所有位置参数必须出现再默认参数前，函数调用时传递参数将覆盖默认参数</p>
+</blockquote>
+</li>
+<li><p>不定长参数</p>
+<p>用于不确定调用的时候会传递多少参数，非为位置传递的不定长参数和关键字传递的不定长参数</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 位置传递的不定长参数</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">user_info</span>(<span class="params">*args</span>):</span><br><span class="line">  <span class="built_in">print</span>(args)</span><br><span class="line">  </span><br><span class="line">user_info(<span class="string">&quot;小明&quot;</span>, <span class="number">18</span>)</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>传递的参数都会被<code>args</code>变量收集，然后根据传进参数的位置合并成为一个元组（<code>tuple</code>）</p>
+</blockquote>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 关键字传递的不定长参数</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">user_info</span>(<span class="params">**kwargs</span>):</span><br><span class="line">  <span class="built_in">print</span>(kwargs)</span><br><span class="line">  </span><br><span class="line">user_info(name = <span class="string">&quot;小明&quot;</span>, age = <span class="number">18</span>, gender = <span class="string">&quot;male&quot;</span>)</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>传递的参数必须都是<code>key-value</code>形式，根据传入的参数合并成为一个字典（<code>dict</code>）</p>
+</blockquote>
+</li>
+</ol>
+<h2 id="匿名函数"><a href="#匿名函数" class="headerlink" title="匿名函数"></a>匿名函数</h2><ol>
+<li><p>函数作为参数</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 例子</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">test</span>(<span class="params">sumFun</span>):</span><br><span class="line">  result = sumFun(<span class="number">1</span>, <span class="number">2</span>)</span><br><span class="line">  <span class="built_in">print</span>(result)</span><br><span class="line">  </span><br><span class="line"><span class="keyword">def</span> <span class="title function_">Sum</span>(<span class="params">x, y</span>):</span><br><span class="line">  <span class="keyword">return</span> x + y</span><br><span class="line"></span><br><span class="line">test(Sum)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><code>lambda</code>关键字可以定义匿名函数（无名称，止咳临时使用1次）</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 语法</span></span><br><span class="line"><span class="keyword">lambda</span> 传入参数: 函数体（一行代码）</span><br><span class="line"></span><br><span class="line"><span class="comment"># 例子</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">test</span>(<span class="params">Sum</span>):</span><br><span class="line">  result = Sum(<span class="number">1</span>, <span class="number">2</span>)</span><br><span class="line">  <span class="built_in">print</span>(result)</span><br><span class="line">  </span><br><span class="line">test(<span class="keyword">lambda</span> x, y: x + y)</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<ul>
+<li><code>lambda</code>表示定义匿名函数</li>
+<li>传入参数表示匿名函数的形参</li>
+<li>函数体就是函数执行的逻辑</li>
+</ul>
+</blockquote>
+</li>
+</ol>
+
       </div>
       <div class="post-tags-categories">
         
@@ -593,7 +645,7 @@ if-else语句
             <div class="post-img-box">
               <a href="/2022/12/17/4_%E5%87%BD%E6%95%B0/" class="post-img " style="background-size: cover; 
                 background-position: center center;">
-                <img class="lazyload lazyload placeholder" style="width:100%;height:100%;object-fit:cover;" data-src="/medias/4.jpg" class="lazyload placeholder" data-srcset="/medias/4.jpg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
+                <img class="lazyload lazyload placeholder" style="width:100%;height:100%;object-fit:cover;" data-src="/medias/8.jpg" class="lazyload placeholder" data-srcset="/medias/8.jpg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
               </a>
             </div>
             <div class="post-date-title">
@@ -602,7 +654,7 @@ if-else语句
                   <span class="post-date">12-17</span>
                 
               </div>
-              <a class="post-title" href="/2022/12/17/4_%E5%87%BD%E6%95%B0/">(四)函数</a>
+              <a class="post-title" href="/2022/12/17/4_%E5%87%BD%E6%95%B0/">函数</a>
             </div>
           </div>
         
