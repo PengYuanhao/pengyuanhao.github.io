@@ -11,7 +11,7 @@
   <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-  <title>(一)flex布局 | 小π</title>
+  <title>待解决问题 | 小π</title>
 
   <link rel="icon" type="image/png" href="/medias/logo.png">
   <link rel="stylesheet" href="https://at.alicdn.com/t/font_1911880_c1nvbyezg17.css">
@@ -309,21 +309,21 @@
 
 
 <div class="post-detail-header" id="thumbnail_canvas" style="background-repeat: no-repeat; background-size: cover; 
-  background-position: center center;position: relative;background-image:url('/medias/6.jpg')">
+  background-position: center center;position: relative;background-image:url('/medias/9.jpg')">
   <div class="post-detail-header-mask"></div>
   <canvas id="header_canvas"style="position:absolute;bottom:0;pointer-events:none;"></canvas>
   
   <div class="post-detail-header_info-box">
     <div class="title-box">
       <span class="title">
-        (一)flex布局
+        待解决问题
       </span>
     </div>
     
     
       
         <span class="post-detail-header_date">
-          <i class="fas fa-calendar"></i> Published in：2022-04-11 |
+          <i class="fas fa-calendar"></i> Published in：2022-03-20 |
         </span>
       
 
@@ -331,8 +331,8 @@
         <span class="post-detail-header_categories">
           <i class="iconfont iconbookmark1"></i> category：
           
-            <a href="/categories/CSS%E5%B8%83%E5%B1%80/" class="post-detail-header_category">
-              CSS布局
+            <a href="/categories/%E5%BE%85%E8%A7%A3%E5%86%B3%E9%97%AE%E9%A2%98/" class="post-detail-header_category">
+              待解决问题
             </a>
           
         </span>
@@ -356,174 +356,38 @@
   <div class="main-content">
     <article class="post post-detail">
       <div class="post-content">
-        <h1 id="flex布局"><a href="#flex布局" class="headerlink" title="flex布局"></a>flex布局</h1><h2 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h2><ul>
-<li>flex布局为flexible box（弹性盒子）的缩写，用以为盒子提供最大的灵活性</li>
-<li>容器设置为<code>flex</code>布局后，项目的<code>float</code>、<code>clear</code>、<code>vertical-algin</code>将失效</li>
-<li>容器默认存在两根轴：水平主轴和垂直的交叉轴。主轴的开始位置为<code>main start</code>，结束位置为<code>main end</code>；交叉轴的开始位置为<code>cross start</code>，结束位置为<code>cross end</code></li>
-<li>项目默认沿主轴排列，单个项目占据的主轴空间为<code>main size</code>，占据的交叉轴空间为<code>cross size</code></li>
-</ul>
-<h2 id="容器属性"><a href="#容器属性" class="headerlink" title="容器属性"></a>容器属性</h2><h3 id="1-flex-direction"><a href="#1-flex-direction" class="headerlink" title="1. flex-direction"></a>1. flex-direction</h3><ul>
-<li><p>描述</p>
-<p>​		决定主轴的方向，相当于是定义项目的排列方式</p>
+        <ol>
+<li><p>el-dialog使用:moudle-append-to-body&#x3D;”false”来解决遮罩层遮挡dialog的问题，但是会与页面中使用的flex布局产生冲突问题怎么解决？<font color="#b00">（待解决）</font></p>
 </li>
-<li><p>语法</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">* row（默认值）：主轴为水平方向，起点在左端</span></span><br><span class="line"><span class="comment">* row-reverse：主轴为水平方向，起点在右端</span></span><br><span class="line"><span class="comment">* column：主轴为垂直方向，起点在上沿</span></span><br><span class="line"><span class="comment">* column-reverse：主轴为垂直方向，起点在下沿</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  <span class="attribute">flex-direction</span>: row | row-reverse | column | column-reverse;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>实现</p>
+<li><p>玫瑰图文字过长过长时，鼠标悬浮时怎么显示tip？<font color="#b00">（待解决）</font></p>
 <ul>
-<li><p>row</p>
-<div style="display:flex;flex-direction:row;background-color:#c1c1c1">
-  <div style="margin:20px;background-color:#e88024;width:100px;height:100px">1</div>
-  <div style="margin:20px;background-color:#e88024;width:100px;height:100px">2</div>
-  <div style="margin:20px;background-color:#e88024;width:100px;height:100px">3</div>
-</div>
-</li>
-<li><p>row-reverse</p>
-<div style="display:flex;flex-direction:row-reverse;background-color:#c1c1c1">
-  <div style="margin:20px;background-color:#e88024;width:100px;height:100px">1</div>
-  <div style="margin:20px;background-color:#e88024;width:100px;height:100px">2</div>
-  <div style="margin:20px;background-color:#e88024;width:100px;height:100px">3</div>
-</div>
-</li>
-<li><p>column</p>
-<div style="display:flex;flex-direction:column;background-color:#c1c1c1">
-  <div style="margin:20px;background-color:#e88024;width:100px;height:100px">1</div>
-  <div style="margin:20px;background-color:#e88024;width:100px;height:100px">2</div>
-  <div style="margin:20px;background-color:#e88024;width:100px;height:100px">3</div>
-</div>
-</li>
-<li><p>column-reverse</p>
-<div style="display:flex;flex-direction:column-reverse;background-color:#c1c1c1">
-  <div style="margin:20px;background-color:#e88024;width:100px;height:100px">1</div>
-  <div style="margin:20px;background-color:#e88024;width:100px;height:100px">2</div>
-  <div style="margin:20px;background-color:#e88024;width:100px;height:100px">3</div>
-</div></li>
+<li>方法一（待尝试）：绑定到该标签的title属性上</li>
 </ul>
 </li>
-</ul>
-<h3 id="2-flex-warp"><a href="#2-flex-warp" class="headerlink" title="2. flex-warp"></a>2. flex-warp</h3><ul>
-<li><p>描述</p>
-<p>​		默认情况下所有的项目都会沿着主轴的方向进行排列，而<code>flex-warp</code>是控制项目在主线排列放不下的情况下进行换行的属性。</p>
-</li>
-<li><p>语法</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">* nowrap（默认）：不换行</span></span><br><span class="line"><span class="comment">* warp：换行，第一行在上方</span></span><br><span class="line"><span class="comment">* warp-reverse：换行，第一行在下方</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  <span class="attribute">flex-wrap</span>: nowrap | wrap | wrap-reverse;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>实现</p>
+<li><p>flex布局中，当显示数目小于等于4时单侧显示，大于4时双侧显示<font color="#b00">（待解决）</font></p>
 <ul>
-<li><p>nowarp &#x3D;&#x3D;&gt; 越添加项目就会继续挤压，导致项目变形</p>
-<div style="display:flex;flex-direction:row;background-color:#c1c1c1;flex-wrap: nowrap">
-  <div style="margin:20px;background-color:#e88024;width:100px;height:100px">1</div>
-  <div style="margin:20px;background-color:#e88024;width:100px;height:100px">2</div>
-  <div style="margin:20px;background-color:#e88024;width:100px;height:100px">3</div>
-  <div style="margin:20px;background-color:#e88024;width:100px;height:100px">4</div>
-  <div style="margin:20px;background-color:#e88024;width:100px;height:100px">5</div>
-  <div style="margin:20px;background-color:#e88024;width:100px;height:100px">6</div>
-  <div style="margin:20px;background-color:#e88024;width:100px;height:100px">7</div>
-  <div style="margin:20px;background-color:#e88024;width:100px;height:100px">8</div>
-  <div style="margin:20px;background-color:#e88024;width:100px;height:100px">9</div>
-</div>
-</li>
-<li><p>warp</p>
-<div style="display:flex;flex-direction:row;background-color:#c1c1c1;flex-wrap: wrap">
-  <div style="margin:20px;background-color:#e88024;width:100px;height:100px">1</div>
-  <div style="margin:20px;background-color:#e88024;width:100px;height:100px">2</div>
-  <div style="margin:20px;background-color:#e88024;width:100px;height:100px">3</div>
-  <div style="margin:20px;background-color:#e88024;width:100px;height:100px">4</div>
-  <div style="margin:20px;background-color:#e88024;width:100px;height:100px">5</div>
-  <div style="margin:20px;background-color:#e88024;width:100px;height:100px">6</div>
-  <div style="margin:20px;background-color:#e88024;width:100px;height:100px">7</div>
-  <div style="margin:20px;background-color:#e88024;width:100px;height:100px">8</div>
-  <div style="margin:20px;background-color:#e88024;width:100px;height:100px">9</div>
-</div>
-</li>
-<li><p>warp-reverse</p>
-<div style="display:flex;flex-direction:row;background-color:#c1c1c1;flex-wrap: wrap-reverse">
-  <div style="margin:20px;background-color:#e88024;width:100px;height:100px">1</div>
-  <div style="margin:20px;background-color:#e88024;width:100px;height:100px">2</div>
-  <div style="margin:20px;background-color:#e88024;width:100px;height:100px">3</div>
-  <div style="margin:20px;background-color:#e88024;width:100px;height:100px">4</div>
-  <div style="margin:20px;background-color:#e88024;width:100px;height:100px">5</div>
-  <div style="margin:20px;background-color:#e88024;width:100px;height:100px">6</div>
-  <div style="margin:20px;background-color:#e88024;width:100px;height:100px">7</div>
-  <div style="margin:20px;background-color:#e88024;width:100px;height:100px">8</div>
-  <div style="margin:20px;background-color:#e88024;width:100px;height:100px">9</div>
-</div></li>
+<li>方法一（待尝试）：分块解决，动态css</li>
 </ul>
 </li>
-</ul>
-<h3 id="3-flex-flow"><a href="#3-flex-flow" class="headerlink" title="3. flex-flow"></a>3. flex-flow</h3><ul>
-<li><p>描述</p>
-<p>​		<code>flex-flow</code>为<code>flex-direaction</code>和<code>flex-warp</code>的简写形式</p>
+<li><p>自定义el-table在接收axios时异步数据产生错乱<font color="#b00">（待解决）</font></p>
 </li>
-<li><p>语法</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 默认值为row nowarp */</span></span><br><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  <span class="attribute">flex-flow</span>: &lt;flex-direction&gt; || &lt;flex-wrap&gt;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-</ul>
-<h3 id="4-justify-content"><a href="#4-justify-content" class="headerlink" title="4. justify-content"></a>4. justify-content</h3><ul>
-<li><p>描述</p>
-<p>​		定义项目在主轴上的对齐方式</p>
+<li><p>el-table与el-page结合时使用flex布局在页面缩放时产生间隙问题<font color="#b00">（待解决）</font></p>
 </li>
-<li><p>语法</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">* flex-start（默认值）：左对齐</span></span><br><span class="line"><span class="comment">* flex-end：右对齐</span></span><br><span class="line"><span class="comment">*	center：居中</span></span><br><span class="line"><span class="comment">* space-between：两端对齐，项目之间的间隔都相等</span></span><br><span class="line"><span class="comment">* space-around：每个项目两侧的间隔相等</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  <span class="attribute">justify-content</span>: flex-start | flex-end | center | space-between | space-around;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-</ul>
-<h3 id="5-align-items"><a href="#5-align-items" class="headerlink" title="5. align-items"></a>5. align-items</h3><ul>
-<li><p>描述</p>
-<p>​		定义项目在交叉轴上对齐方式</p>
+<li><p>父级div使不使用display: table，子级div使用table-cell会产生自动对齐效果吗？<font color="#b00">（待解决）</font></p>
 </li>
-<li><p>语法</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">* flex-start：交叉轴的起点对齐</span></span><br><span class="line"><span class="comment">* flex-end：交叉轴的终点对齐</span></span><br><span class="line"><span class="comment">* center：交叉轴的中点对齐</span></span><br><span class="line"><span class="comment">* baseline: 项目的第一行文字的基线对齐</span></span><br><span class="line"><span class="comment">* stretch（默认值）：如果项目未设置高度或设为auto，将占满整个容器的高度</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  <span class="attribute">align-items</span>: flex-start | flex-end | center | baseline | stretch;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-</ul>
-<h3 id="6-align-content"><a href="#6-align-content" class="headerlink" title="6. align-content"></a>6. align-content</h3><ul>
-<li><p>描述</p>
-<p>​		定义多根轴线的对齐方式，若项目只有一根轴线，则该属性不起作用。</p>
+<li><p>props接收父级数据，可以在watch中进行监听吗？<font color="#0b0">（已解决）</font></p>
+<p>答：可以使用watch进行监听</p>
 </li>
-<li><p>语法</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">* flex-start：与交叉轴的起点对齐</span></span><br><span class="line"><span class="comment">* flex-end：与交叉轴的终点对齐</span></span><br><span class="line"><span class="comment">* center：与交叉轴的中点对齐</span></span><br><span class="line"><span class="comment">* space-between：与交叉轴两端对齐，轴线之间的间隔平均分布</span></span><br><span class="line"><span class="comment">* space-around：每根轴线两侧的间隔都相等。所以，轴线之间的间隔比轴线与边框的间隔大一倍</span></span><br><span class="line"><span class="comment">* stretch（默认值）：轴线占满整个交叉轴</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="selector-class">.box</span> &#123;</span><br><span class="line">  <span class="attribute">align-content</span>: flex-start | flex-end | center | space-between | space-around | stretch;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-</ul>
-<h2 id="项目属性"><a href="#项目属性" class="headerlink" title="项目属性"></a>项目属性</h2><h3 id="1-order"><a href="#1-order" class="headerlink" title="1. order"></a>1. order</h3><ul>
-<li><p>描述</p>
-<p>​		定义项目的排列顺序。数值越小，排列越靠前，默认为0</p>
+<li><p>css变量在nth-child()中不可读<font color="#b00">（待解决）</font></p>
 </li>
-<li><p>语法</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.item</span> &#123;</span><br><span class="line">  <span class="attribute">order</span>: &lt;integer&gt;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li><p>vite构建的vue2项目中对静态资源图片的引入<font color="#0b0">（已解决）</font></p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://www.cnblogs.com/lyj0810/p/16341084.html">https://www.cnblogs.com/lyj0810/p/16341084.html</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/399939287">https://zhuanlan.zhihu.com/p/399939287</a></li>
+<li><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_53457810/article/details/123946208">https://blog.csdn.net/weixin_53457810/article/details/123946208</a></li>
 </ul>
-<h3 id="2-flex-grow"><a href="#2-flex-grow" class="headerlink" title="2. flex-grow"></a>2. flex-grow</h3><ul>
-<li><p>描述</p>
-<p>​		定义项目的放大比例，默认为0。也就是说即使存在剩余空间也不放大。若所有的项目的<code>flex-grow</code>都为1，则他们将等分剩余空间。若一个项目的<code>flex-grow</code>为2，其他项目都为1，则前者占据的剩余空间将比其他项多一倍。</p>
 </li>
-<li><p>语法</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.item</span> &#123;</span><br><span class="line">  <span class="attribute">flex-grow</span>: &lt;number&gt;; <span class="comment">/* default 0 */</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-</ul>
-<h3 id="3-flex-shrink"><a href="#3-flex-shrink" class="headerlink" title="3. flex-shrink"></a>3. flex-shrink</h3><ul>
-<li><p>描述</p>
-<p>​		定义了项目的缩小比例，默认为1，即如果空间不足，该项目将缩小。若所有项目的<code>flex-shrink</code>都为1，则当空间不足时，所有项目都将等比例缩小。若一个项目的<code>flex-shrink</code>为0，其他项目都为1，则当空间不足时，前者不缩小。</p>
-</li>
-<li><p>语法</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.item</span> &#123;</span><br><span class="line">  <span class="attribute">flex-shrink</span>: &lt;number&gt;; <span class="comment">/* default 1 */</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-</ul>
-<h3 id="4-flex-basis"><a href="#4-flex-basis" class="headerlink" title="4. flex-basis"></a>4. flex-basis</h3><ul>
-<li><p>描述</p>
-<p>​		定义在分配多余空间之前，项目占据的主轴空间。浏览器根据这个属性，计算主轴是否有多余空间。默认值为auto，相当于是项目本身的大小</p>
-</li>
-<li><p>语法</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.item</span> &#123;</span><br><span class="line">  <span class="attribute">flex-basis</span>: &lt;length&gt; | auto; <span class="comment">/* default auto */</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-</ul>
-<h3 id="5-flex"><a href="#5-flex" class="headerlink" title="5. flex"></a>5. flex</h3><ul>
-<li><p>描述</p>
-<p>​		<code>flex</code>属性是<code>flex-grow</code>, <code>flex-shrink</code> 和 <code>flex-basis</code>的简写，默认值为<code>0 1 auto</code>。后两个属性可选</p>
-</li>
-<li><p>语法</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 该属性有两个快捷值：auto (1 1 auto) 和 none (0 0 auto)。 */</span></span><br><span class="line"><span class="selector-class">.item</span> &#123;</span><br><span class="line">  <span class="attribute">flex</span>: none | [ &lt;<span class="string">&#x27;flex-grow&#x27;</span>&gt; &lt;<span class="string">&#x27;flex-shrink&#x27;</span>&gt;? || &lt;<span class="string">&#x27;flex-basis&#x27;</span>&gt; ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><font color="#b00">建议优先使用这个属性</font>，而不是单独写三个分离的属性</p>
-</li>
-</ul>
-<h3 id="6-algin-self"><a href="#6-algin-self" class="headerlink" title="6. algin-self"></a>6. algin-self</h3><ul>
-<li><p>描述</p>
-<p>​		允许单个项目有与其他项目不一样的对齐方式，可覆盖<code>align-items</code>属性。默认值为<code>auto</code>，表示继承父元素的<code>align-items</code>属性，如果没有父元素，则等同于<code>stretch</code>。</p>
-</li>
-<li><p>语法</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.item</span> &#123;</span><br><span class="line">  <span class="attribute">align-self</span>: auto | flex-start | flex-end | center | baseline | stretch;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-</ul>
+</ol>
 
       </div>
       <div class="post-tags-categories">
@@ -542,17 +406,18 @@
   <div class="post-nav-prev post-nav-item">
     <div class="post-nav-img" style="background-size: cover; 
       background-position: center center;">
-      <img class="lazyload lazyload placeholder" src="/medias/5.jpg" class="lazyload placeholder" data-srcset="/medias/5.jpg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
+      <img class="lazyload lazyload placeholder" src="/medias/6.jpg" class="lazyload placeholder" data-srcset="/medias/6.jpg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
     </div>
-    <a href="/2022/04/15/1_grid%E7%BD%91%E6%A0%BC%E5%B8%83%E5%B1%80/" class="post-nav-link">
+    <a href="/2022/04/11/1_flex%E5%B8%83%E5%B1%80/" class="post-nav-link">
       <div class="title">
         <i class="fas fa-angle-left"></i> Prev:
-        <div class="title-text">(二)grid网格布局</div>
+        <div class="title-text">(一)flex布局</div>
       </div>
       
       <!-- <div class="content">
-        grid网格布局
-grid概念：grid布局将容器划分成“行”与“列”，从而产生单元格，然后指定“项目”所在的单元格，可
+        flex布局基本概念
+flex布局为flexible box（弹性盒子）的缩写，用以为盒子提供最大的灵活性
+容器设置为f
       </div> -->
     </a>
   </div>
@@ -563,16 +428,17 @@ grid概念：grid布局将容器划分成“行”与“列”，从而产生单
   <div class="post-nav-next post-nav-item">
     <div class="post-nav-img" style="background-size: cover; 
       background-position: center center;">
-      <img class="lazyload lazyload placeholder" src="/medias/9.jpg" class="lazyload placeholder" data-srcset="/medias/9.jpg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" src="" alt="">
+      <img class="lazyload lazyload placeholder" src="/medias/5.jpg" class="lazyload placeholder" data-srcset="/medias/5.jpg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" src="" alt="">
     </div>
-    <a href="/2022/03/20/Solve%20Problems/" class="post-nav-link">
+    <a href="/2021/11/14/1_vue2%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8/" class="post-nav-link">
       <div class="title">
         Next: <i class="fas fa-angle-right"></i>
-        <div class="title-text">待解决问题</div>
+        <div class="title-text">(一)vue2基础入门</div>
       </div>
       <!-- <div class="content">
-        
-el-dialog使用:moudle-append-to-body&#x3D;”false”来解决遮罩层遮挡dialo
+        1-初识Vue
+想让Vue工作，就必须创建一个Vue实例，且传入一个配置对象
+root容器里的代码依然符合html规范，
       </div> -->
     </a>
   </div>
@@ -667,7 +533,7 @@ el-dialog使用:moudle-append-to-body&#x3D;”false”来解决遮罩层遮挡di
   <div class='content'>
     <div class="toc-main">
       <div class="toc-content">
-        <!-- <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#flex%E5%B8%83%E5%B1%80"><span class="toc-text">flex布局</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="toc-text">基本概念</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%B9%E5%99%A8%E5%B1%9E%E6%80%A7"><span class="toc-text">容器属性</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-flex-direction"><span class="toc-text">1. flex-direction</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-flex-warp"><span class="toc-text">2. flex-warp</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-flex-flow"><span class="toc-text">3. flex-flow</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-justify-content"><span class="toc-text">4. justify-content</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-align-items"><span class="toc-text">5. align-items</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-align-content"><span class="toc-text">6. align-content</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%A1%B9%E7%9B%AE%E5%B1%9E%E6%80%A7"><span class="toc-text">项目属性</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-order"><span class="toc-text">1. order</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-flex-grow"><span class="toc-text">2. flex-grow</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-flex-shrink"><span class="toc-text">3. flex-shrink</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-flex-basis"><span class="toc-text">4. flex-basis</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-flex"><span class="toc-text">5. flex</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-algin-self"><span class="toc-text">6. algin-self</span></a></li></ol></li></ol></li></ol> -->
+        <!--  -->
         <div class="toc"></div>
       </div>
     </div>
